@@ -12,8 +12,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         buscar.setOnClickListener {
-            val bairro = ViaCepCaller().getAddress(searchCep.text.toString())
-            address.text = "O seu bairro é: $bairro"
+            val rua = ViaCepCaller().getAddress(searchCep.text.toString())
+            address.text = "O seu logradouro é: $rua"
         }
     }
 }

@@ -11,7 +11,7 @@ import okhttp3.Request
 class ViaCepCaller {
 
     fun getAddress(cep: String): String? = runBlocking {
-        withContext(Dispatchers.IO) { callAddress(cep) }?.bairro
+        withContext(Dispatchers.IO) { callAddress(cep) }?.logradouro
     }
 
     private fun callAddress(cep: String): ViaSearchCep? {
