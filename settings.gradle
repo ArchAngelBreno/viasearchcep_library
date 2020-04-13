@@ -1,0 +1,3 @@
+rootProject.name='LibrarySample'
+include ':app'
+include ':viacepsearch'
